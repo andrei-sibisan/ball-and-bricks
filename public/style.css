@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #212529;
+  font-family: "Space Mono", monospace;
+  color: #f1f3f5;
+  font-size: 16px;
+}
+
+.app-container {
+  width: 75vw;
+  margin: 5vh auto;
+  height: 80vh;
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.character-screen {
+  position: fixed;
+  height: 80vh;
+  width: 75vw;
+  background-color: #343a40;
+  z-index: 80;
+
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 4;
+}
+
+.character-details {
+  background-color: #495057;
+  padding: 10px;
+}
+
+.input-screen {
+  position: fixed;
+  /* margin: auto auto; */
+  height: 80vh;
+  width: 75vw;
+  background-color: #343a40;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  z-index: 100;
+}
+
+.slide-away {
+  animation-name: out;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  animation-direction: normal;
+  animation-iteration-count: 1;
+}
+@keyframes out {
+  0% {
+    transform: translateY(0%);
+    transform: scale(100%);
+    opacity: 100%;
+  }
+
+  10% {
+    transform: scale(120%);
+    opacity: 20%;
+  }
+
+  100% {
+    transform: translateY(-300%);
+    opacity: 0%;
+  }
+}
+
+.login-title {
+  font-size: 2.074rem;
+}
+.input-form {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+}
+#username {
+  width: 50%;
+  font-size: 0.833rem;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #495057;
+}
+
+.hidden {
+  display: none;
+}

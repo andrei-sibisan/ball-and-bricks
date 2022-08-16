@@ -1,0 +1,22 @@
+{
+  "name": "ball_and_bricks",
+  "version": "1.0.0",
+  "description": "Ball and bricks third attempt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ball",
+    "bricks",
+    "JSON",
+    "save-game",
+    "multiple",
+    "users"
+  ],
+  "author": "Andrei Sibisan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

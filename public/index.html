@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" type="module" defer></script>
+    <title>Ball and Brick Refactor</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="input-screen">
+        <span class="login-title">BALL AND BRICKS</span>
+        <form class="input-form">
+          <input
+            type="text"
+            id="username"
+            name="name"
+            placeholder="Enter your name, commander"
+          />
+        </form>
+      </div>
+      <div class="character-screen">
+        <div class="character-details">
+          <span class="character-name" id="character-name"></span>
+          <span class="character-level" id="character-level"></span>
+        </div>
+        <div class="health-bar" id="health-bar"></div>
+        <div class="scores">
+          <div class="score" id="score">0</div>
+          <div class="personal-highscore" id="personal-highscore"></div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="ball"></div>
+        <div class="brick-container"></div>
+        <div class="paddle" id="paddle"></div>
+      </div>
+    </div>
+  </body>
+</html>
